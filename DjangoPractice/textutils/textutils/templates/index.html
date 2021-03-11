@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> TEMPLATE </title>
+    </head>
+    <body>
+        <!--
+        Body of Template is here<br><br>
+        This is how you access parameters from views.py<br>
+        {{name}} stays in {{place}}-->
+        <h1>Input the Text that is to be Analyzed</h1><br>
+        <form action="/analyze" method = 'get'>
+            <textarea name = 'text' style="margin: 0px; width: 692px; height: 117px;"></textarea><br><br>
+            <input type="checkbox" name="removepunc"> Remove Punctuations <br>
+            <input type="checkbox" name="fullcaps"> UPPER CASE <br>
+            <input type="checkbox" name="newlineremover"> Remove New line <br>
+            <input type="checkbox" name="spaceremover"> Remove Space <br>
+            <input type="checkbox" name="charcount"> Character Count<br>
+            <br><br>
+            <button type="Submit">Analyse Text</button>  
+        </form>
+
+    </body>
+</html>
